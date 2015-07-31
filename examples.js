@@ -3,13 +3,13 @@
 This purpose of this file is to test the generated m26.js file, outside of jasmine,
 before deployment to npm.  It (accurately) generates Examples section of the README.md
 file based on actual working code and output.
-Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
+Copyright 2014, Christopher Joakim, JoakimSoftware LLC <christopher.joakim@gmail.com>
  */
 
 (function() {
-  var a0, a1, a2, a20, a21, a57, c, d, d1, d2, d3, d4, d5, m26, s, s2, t, t1, t2, zones;
+  var a0, a1, a2, a20, a21, a57, d, d1, d2, d3, d4, d5, m26, s, s2, t, t1, t2, zones;
 
-  m26 = require("./lib/m26-js.js");
+  m26 = require("./lib/m26.js");
 
   console.log('');
 
@@ -41,7 +41,7 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('');
 
-  console.log('Note: this library is now implemented with TypeScript, but these examples are in CoffeeScript.');
+  console.log('Note: this library is implemented with CoffeeScript, and these examples are also in CoffeeScript.');
 
   console.log('');
 
@@ -53,35 +53,35 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('```');
 
-  console.log('m26.M26Constants.VERSION:             ' + m26.M26Constants.VERSION);
+  console.log('m26.Constants.VERSION:             ' + m26.Constants.VERSION);
 
-  console.log('m26.M26Constants.UOM_MILES:           ' + m26.M26Constants.UOM_MILES);
+  console.log('m26.Constants.UOM_MILES:           ' + m26.Constants.UOM_MILES);
 
-  console.log('m26.M26Constants.UOM_KILOMETERS:      ' + m26.M26Constants.UOM_KILOMETERS);
+  console.log('m26.Constants.UOM_KILOMETERS:      ' + m26.Constants.UOM_KILOMETERS);
 
-  console.log('m26.M26Constants.UOM_YARDS:           ' + m26.M26Constants.UOM_YARDS);
+  console.log('m26.Constants.UOM_YARDS:           ' + m26.Constants.UOM_YARDS);
 
-  console.log('m26.M26Constants.UNITS_OF_MEASURE:    ' + JSON.stringify(m26.M26Constants.UNITS_OF_MEASURE));
+  console.log('m26.Constants.UNITS_OF_MEASURE:    ' + JSON.stringify(m26.Constants.UNITS_OF_MEASURE));
 
-  console.log('m26.M26Constants.KILOMETERS_PER_MILE: ' + m26.M26Constants.KILOMETERS_PER_MILE);
+  console.log('m26.Constants.KILOMETERS_PER_MILE: ' + m26.Constants.KILOMETERS_PER_MILE);
 
-  console.log('m26.M26Constants.YARDS_PER_MILE:      ' + m26.M26Constants.YARDS_PER_MILE);
+  console.log('m26.Constants.YARDS_PER_MILE:      ' + m26.Constants.YARDS_PER_MILE);
 
-  console.log('m26.M26Constants.MILES_PER_KILOMETER: ' + m26.M26Constants.MILES_PER_KILOMETER);
+  console.log('m26.Constants.MILES_PER_KILOMETER: ' + m26.Constants.MILES_PER_KILOMETER);
 
-  console.log('m26.M26Constants.YARDS_PER_KILOMETER: ' + m26.M26Constants.YARDS_PER_KILOMETER);
+  console.log('m26.Constants.YARDS_PER_KILOMETER: ' + m26.Constants.YARDS_PER_KILOMETER);
 
-  console.log('m26.M26Constants.SECONDS_PER_HOUR:    ' + m26.M26Constants.SECONDS_PER_HOUR);
+  console.log('m26.Constants.SECONDS_PER_HOUR:    ' + m26.Constants.SECONDS_PER_HOUR);
 
   console.log('```');
 
   console.log('');
 
-  console.log('#### M26Age');
+  console.log('#### Age');
 
   console.log('');
 
-  console.log('Construct an M26Age from either a Number or String value.');
+  console.log('Construct an Age from either a Number or String value.');
 
   console.log('');
 
@@ -89,19 +89,19 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('Max-pulse and training-zones are based on the widely known "220 - age" formula.');
 
-  a20 = new m26.M26Age(20.2);
+  a20 = new m26.Age(20.2);
 
-  a21 = new m26.M26Age(21);
+  a21 = new m26.Age(21);
 
-  a57 = new m26.M26Age("57.1");
+  a57 = new m26.Age("57.1");
 
   console.log('```');
 
-  console.log('a20 = new m26.M26Age(20.2)');
+  console.log('a20 = new m26.Age(20.2)');
 
-  console.log('a21 = new m26.M26Age(21)');
+  console.log('a21 = new m26.Age(21)');
 
-  console.log('a57 = new m26.M26Age("57.1")');
+  console.log('a57 = new m26.Age("57.1")');
 
   console.log('a20.val()  ->  ' + a20.val());
 
@@ -131,27 +131,23 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('');
 
-  console.log('#### M26AgeCalculator');
+  console.log('#### AgeCalculator');
 
   console.log('');
 
-  console.log('Calculate and return an M26Age object, given a birth date, and optional as-of date.');
+  console.log('Calculate and return an Age object, given a birth date, and optional as-of date.');
 
   console.log('');
 
-  c = new m26.M26AgeCalculator();
+  a0 = m26.AgeCalculator.calculate("2014-10-01", "2014-11-01");
 
-  a0 = c.calculate("2014-10-01", "2014-11-01");
-
-  a1 = c.calculate("1960-10-01", "2014-11-01");
+  a1 = m26.AgeCalculator.calculate("1960-10-01", "2014-11-01");
 
   console.log('```');
 
-  console.log('c  = new m26.M26AgeCalculator()');
+  console.log('a0 = m26.AgeCalculator.calculate("2014-10-01", "2014-11-01")');
 
-  console.log('a0 = c.calculate("2014-10-01", "2014-11-01")');
-
-  console.log('a1 = c.calculate("1960-10-01", "2014-11-01")');
+  console.log('a1 = m26.AgeCalculator.calculate("1960-10-01", "2014-10-01")');
 
   console.log('a0.val()  ->  ' + a0.val());
 
@@ -161,7 +157,7 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('');
 
-  console.log('#### M26Distance');
+  console.log('#### Distance');
 
   console.log('');
 
@@ -173,11 +169,11 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('```');
 
-  d1 = new m26.M26Distance(26.2);
+  d1 = new m26.Distance(26.2);
 
-  console.log('d1 = new m26.M26Distance(26.2)');
+  console.log('d1 = new m26.Distance(26.2)');
 
-  console.log('d1.uom             -> ' + d1.uom);
+  console.log('d1.uom()           -> ' + d1.uom());
 
   console.log('d1.as_miles()      -> ' + d1.as_miles());
 
@@ -189,11 +185,11 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('');
 
-  console.log('M26Distances can be constructed from other units, and added and subtracted.');
+  console.log('Distances can be constructed from other units, and added and subtracted.');
 
-  d2 = new m26.M26Distance(4.8);
+  d2 = new m26.Distance(4.8);
 
-  d3 = new m26.M26Distance(10.0, "k");
+  d3 = new m26.Distance(10.0, "k");
 
   d4 = d1.subtract(d3);
 
@@ -201,9 +197,9 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('```');
 
-  console.log('d2 = new m26.M26Distance(4.8)');
+  console.log('d2 = new m26.Distance(4.8)');
 
-  console.log('d3 = new m26.M26Distance(10.0, "k")');
+  console.log('d3 = new m26.Distance(10.0, "k")');
 
   console.log('d4 = d1.subtract(d3)');
 
@@ -215,11 +211,11 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('```');
 
-  console.log('#### M26ElapsedTime');
+  console.log('#### ElapsedTime');
 
   console.log('');
 
-  console.log('M26ElapsedTime objects can be constructed from a Number of seconds, or "hh:mm:ss", "hh:mm", or "ss" String values.');
+  console.log('ElapsedTime objects can be constructed from a Number of seconds, or "hh:mm:ss", "hh:mm", or "ss" String values.');
 
   console.log('');
 
@@ -227,11 +223,11 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('```');
 
-  t1 = new m26.M26ElapsedTime(3665);
+  t1 = new m26.ElapsedTime(3665);
 
-  t2 = new m26.M26ElapsedTime("3:47:30");
+  t2 = new m26.ElapsedTime("3:47:30");
 
-  console.log('t1 = new m26.M26ElapsedTime(3665)');
+  console.log('t1 = new m26.ElapsedTime(3665)');
 
   console.log('t1.as_hhmmss() -> ' + t1.as_hhmmss());
 
@@ -241,7 +237,7 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('');
 
-  console.log('t2 = new m26.M26ElapsedTime("3:47:30")');
+  console.log('t2 = new m26.ElapsedTime("3:47:30")');
 
   console.log('t2.as_hhmmss() -> ' + t2.as_hhmmss());
 
@@ -253,11 +249,11 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('');
 
-  console.log('#### M26Speed');
+  console.log('#### Speed');
 
   console.log('');
 
-  console.log('Calculate a M26Speed based on a given M26Distance and M26ElapsedTime.');
+  console.log('Calculate a Speed based on a given Distance and ElapsedTime.');
 
   console.log('');
 
@@ -265,21 +261,21 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('```');
 
-  d = new m26.M26Distance(26.2);
+  d = new m26.Distance(26.2);
 
-  t = new m26.M26ElapsedTime("04:10:00");
+  t = new m26.ElapsedTime("04:10:00");
 
-  s = new m26.M26Speed(d, t);
+  s = new m26.Speed(d, t);
 
-  d2 = new m26.M26Distance(50.0, "k");
+  d2 = new m26.Distance(50.0, "k");
 
-  console.log('d  = new m26.M26Distance(26.2)');
+  console.log('d  = new m26.Distance(26.2)');
 
-  console.log('d2 = new m26.M26Distance(50.0, "k")');
+  console.log('d2 = new m26.Distance(50.0, "k")');
 
-  console.log('t  = new m26.M26ElapsedTime("04:10:00")');
+  console.log('t  = new m26.ElapsedTime("04:10:00")');
 
-  console.log('s  = new m26.M26Speed(d, t)');
+  console.log('s  = new m26.Speed(d, t)');
 
   console.log('');
 
@@ -305,15 +301,15 @@ Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 
   console.log('');
 
-  a1 = new m26.M26Age(42.5);
+  a1 = new m26.Age(42.5);
 
-  a2 = new m26.M26Age(57.1);
+  a2 = new m26.Age(57.1);
 
   s2 = s.age_graded(a1, a2);
 
-  console.log('a1 = new m26.M26Age(42.5)');
+  console.log('a1 = new m26.Age(42.5)');
 
-  console.log('a2 = new m26.M26Age(57.1)');
+  console.log('a2 = new m26.Age(57.1)');
 
   console.log('s2 = s.age_graded(a1, a2)');
 

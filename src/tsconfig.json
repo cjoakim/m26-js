@@ -13,6 +13,8 @@
         "!./node_modules/**/*.ts"
     ],
     "files": [
+        "./m26-js.d.ts",
+        "./m26-js.ts",
         "./m26_age.d.ts",
         "./m26_age.ts",
         "./m26_age_calculator.d.ts",
