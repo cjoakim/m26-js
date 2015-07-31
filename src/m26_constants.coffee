@@ -1,6 +1,4 @@
-###
-Copyright 2014, Christopher Joakim, JoakimSoftware LLC <christopher.joakim@gmail.com>
-###
+# Copyright 2015, Christopher Joakim <christopher.joakim@gmail.com>
 
 root = exports ? this
 
@@ -20,10 +18,5 @@ class Constants
   @YARDS_PER_MILE      = 1760.0
   @SECONDS_PER_HOUR    = 3600.0
 
-  # @KILOMETERS_PER_MILE = 1.61290322581
-  # @YARDS_PER_MILE      = 1760.0
-  # @MILES_PER_KILOMETER = 0.62
-  # @YARDS_PER_KILOMETER = 1091.2
-  # @SECONDS_PER_HOUR    = 3600.0
 
 root.Constants = Constants

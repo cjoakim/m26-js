@@ -2,7 +2,7 @@
 This purpose of this file is to test the generated m26.js file, outside of jasmine,
 before deployment to npm.  It (accurately) generates Examples section of the README.md
 file based on actual working code and output.
-Copyright 2014, Christopher Joakim, JoakimSoftware LLC <christopher.joakim@gmail.com>
+Copyright 2015, Christopher Joakim <christopher.joakim@gmail.com>
 ###
 
 m26 = require("./lib/m26.js")
