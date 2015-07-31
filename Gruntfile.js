@@ -16,7 +16,6 @@ module.exports = function (grunt) {
           'test/m26_distance_spec.js':       ['test-src/m26_distance_spec.coffee'],
           'test/m26_elapsed_time_spec.js':   ['test-src/m26_elapsed_time_spec.coffee'],
           'test/m26_speed_spec.js':          ['test-src/m26_speed_spec.coffee'],
-          'test/spec_helper.js':             ['test-src/spec_helper.coffee'],
 
           'examples.js':                     ['test-src/examples.coffee']
         }
