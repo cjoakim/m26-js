@@ -165,17 +165,17 @@ result object:
 
 ### Release History
 
-* 2015-08-04  v0.4.0  Added class RunWalkCalculator, and ported the project back to CoffeeScript.
-* 2015-05-13  v0.3.2  Repackaged again, from a single merged m26-js.ts file. Tests enhanced.
-* 2015-05-12  v0.3.1  Renamed lib from m26.js to m26-js.js, etc, and repackaged.
-* 2015-05-12  v0.3.0  Project ported from CoffeeScript to Typescript, with m26.d.ts typings file.
-* 2014-11-09  v0.2.0  Corrected the English-to-Metric and Metric-to-English conversions.
-* 2014-11-06  v0.1.5  Fix require statement in examples documentation.
-* 2014-11-05  v0.1.4  Removed a spec_helper function.
-* 2014-11-02  v0.1.3  Added Age.training_zones()
-* 2014-11-01  v0.1.2  Added Speed.age_graded()
-* 2014-11-01  v0.1.1  Added Speed.projected_time(), Age, AgeCalculator.
-* 2014-11-01  v0.1.0  Initial working version.
-* 2014-11-01  v0.0.3  alpha 3
-* 2014-11-01  v0.0.2  alpha 2
-* 2014-11-01  v0.0.1  alpha 1
+* 2015-08-04 - 0.4.0 - Added class RunWalkCalculator, and ported the project back to CoffeeScript.
+* 2015-05-13 - 0.3.2 - Repackaged again, from a single merged m26-js.ts file. Tests enhanced.
+* 2015-05-12 - 0.3.1 - Renamed lib from m26.js to m26-js.js, etc, and repackaged.
+* 2015-05-12 - 0.3.0 - Project ported from CoffeeScript to Typescript, with m26.d.ts typings file.
+* 2014-11-09 - 0.2.0 - Corrected the English-to-Metric and Metric-to-English conversions.
+* 2014-11-06 - 0.1.5 - Fix require statement in examples documentation.
+* 2014-11-05 - 0.1.4 - Removed a spec_helper function.
+* 2014-11-02 - 0.1.3 - Added Age.training_zones()
+* 2014-11-01 - 0.1.2 - Added Speed.age_graded()
+* 2014-11-01 - 0.1.1 - Added Speed.projected_time(), Age, AgeCalculator.
+* 2014-11-01 - 0.1.0 - Initial working version.
+* 2014-11-01 - 0.0.3 - alpha 3
+* 2014-11-01 - 0.0.2 - alpha 2
+* 2014-11-01 - 0.0.1 - alpha 1
