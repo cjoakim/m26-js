@@ -8,3 +8,5 @@ Gruntfile.js
 src/
 test/
 test-src/
+tmp/
+
