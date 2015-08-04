@@ -8,6 +8,7 @@ Gruntfile.js
 .idea/
 coverage/
 src/
+tasks/
 test/
 test-src/
 tmp/
