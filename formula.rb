@@ -1,5 +1,5 @@
 # Simple Ruby script used to precisely calculate/generate the constant value code.
-# Copyright 2014, Christopher Joakim, JoakimSoftware LLC <christopher.joakim@gmail.com>
+# Copyright 2015 Christopher Joakim <christopher.joakim@gmail.com>
 #
 # See http://en.wikipedia.org/wiki/Imperial_units
 # 'meters_per_imperial_mile' is the basis for the following calculations
