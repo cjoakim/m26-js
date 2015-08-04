@@ -7,8 +7,7 @@ class AgeCalculator
   # these are "class methods", not "instance methods".
 
   @milliseconds_per_year: ->
-    # ms_yr = 1000 * 60 * 60 * 24 * 365.25
-    31557600000
+    31557600000 # ms_yr = 1000 * 60 * 60 * 24 * 365.25
 
   @calculate: (birth_yyyy_mm_dd, as_of_yyyy_mm_dd) ->
     if birth_yyyy_mm_dd

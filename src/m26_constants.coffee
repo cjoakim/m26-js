@@ -4,7 +4,7 @@ root = exports ? this
 
 class Constants
 
-  @VERSION:        '0.2.0'
+  @VERSION:        '0.4.0'
   @UOM_MILES:      'm'
   @UOM_KILOMETERS: 'k'
   @UOM_YARDS:      'y'

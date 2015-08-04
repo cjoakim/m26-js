@@ -1,7 +1,7 @@
 (function() {
   describe('M26', function() {
     it('defines VERSION', function() {
-      return expect(Constants.VERSION).toBe('0.2.0');
+      return expect(Constants.VERSION).toBe('0.4.0');
     });
     it('defines UOM_MILES', function() {
       return expect(Constants.UOM_MILES).toBe('m');

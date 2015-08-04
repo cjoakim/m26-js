@@ -3,7 +3,7 @@
 describe 'M26', ->
 
   it 'defines VERSION', ->
-    expect(Constants.VERSION).toBe('0.2.0')
+    expect(Constants.VERSION).toBe('0.4.0')
 
   it 'defines UOM_MILES', ->
     expect(Constants.UOM_MILES).toBe('m')

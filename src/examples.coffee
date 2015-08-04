@@ -1,7 +1,7 @@
 ###
-This purpose of this file is to test the generated m26.js file, outside of jasmine,
-before deployment to npm.  It (accurately) generates Examples section of the README.md
-file based on actual working code and output.
+This purpose of this file is to test the generated m26.js file, outside of
+jasmine, before deployment to npm.  It accurately generates the Examples
+section of the README.md file based on actual working code and output.
 Copyright 2015, Christopher Joakim, <christopher.joakim@gmail.com>
 ###
 
@@ -22,7 +22,7 @@ console.log('```')
 console.log('m26 = require("m26-js")')
 console.log('```')
 console.log('')
-console.log('Note: this library is now implemented with TypeScript, but these examples are in CoffeeScript.')
+console.log('Note: this library is implemented with CoffeeScript, so these examples are in CoffeeScript, too.')
 console.log('')
 
 console.log('#### Constants')
