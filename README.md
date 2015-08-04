@@ -141,6 +141,10 @@ s2.mph()  -> 5.770789859154929
 
 ### Release History
 
+* 2015-08-04  v0.4.0  Project ported project back to CoffeeScript from Typescript.
+* 2015-05-13  v0.3.2  Repackaged again, from a single merged m26-js.ts file. Tests enhanced.
+* 2015-05-12  v0.3.1  Renamed lib from m26.js to m26-js.js, etc, and repackaged.
+* 2015-05-12  v0.3.0  Project ported from CoffeeScript to Typescript, with m26.d.ts typings file.
 * 2014-11-09  v0.2.0  Corrected the English-to-Metric and Metric-to-English conversions.
 * 2014-11-06  v0.1.5  Fix require statement in examples documentation.
 * 2014-11-05  v0.1.4  Removed a spec_helper function.
@@ -151,3 +155,9 @@ s2.mph()  -> 5.770789859154929
 * 2014-11-01  v0.0.3  alpha 3
 * 2014-11-01  v0.0.2  alpha 2
 * 2014-11-01  v0.0.1  alpha 1
+
+
+
+Pace Calc
+Run Walk Calc
+Age Graded Calc
