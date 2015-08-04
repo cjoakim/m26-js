@@ -5,6 +5,8 @@ formula.rb
 examples.js
 Gruntfile.js
 
+.idea/
+coverage/
 src/
 test/
 test-src/
