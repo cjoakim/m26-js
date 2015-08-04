@@ -8,7 +8,7 @@
       walk_ppm = '0:00';
       miles = '26.2';
       result = RunWalkCalculator.calculate(run_hhmmss, run_ppm, walk_hhmmss, walk_ppm, miles);
-      return console.log(JSON.stringify(result));
+      return console.log(JSON.stringify(result, null, 2));
     });
   });
 
