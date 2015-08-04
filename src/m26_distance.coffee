@@ -54,4 +54,5 @@ class Distance
       d2 = another_instance.as_miles()
       new Distance(d1 - d2)
 
+
 root.Distance = Distance
