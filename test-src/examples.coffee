@@ -180,6 +180,7 @@ walk_hhmmss = '0:45'
 walk_ppm    = '18:00'
 miles       = '26.2'
 result      = m26.RunWalkCalculator.calculate(run_hhmmss, run_ppm, walk_hhmmss, walk_ppm, miles)
+console.log('```')
 console.log("run_hhmmss  = '9:15'")
 console.log("run_ppm     = '9:00'")
 console.log("walk_hhmmss = '0:45'")
@@ -187,7 +188,6 @@ console.log("walk_ppm    = '18:00'")
 console.log("miles       = '26.2'")
 console.log("result      = m26.RunWalkCalculator.calculate(run_hhmmss, run_ppm, walk_hhmmss, walk_ppm, miles)")
 console.log("result object: ")
-console.log('```')
 console.log(JSON.stringify(result, null, 2))
 console.log('```')
 console.log('')
