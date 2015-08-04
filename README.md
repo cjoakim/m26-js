@@ -6,6 +6,7 @@ A Node.js library for speed and pace calculations for sports like running,
 swimming, and cycling. Age-graded times and heart-rate training-zones are
 also supported.
 
+
 ### Examples
 
 #### Setup
@@ -140,9 +141,30 @@ s.mph()   -> 6.287999999999999
 s2.mph()  -> 5.770789859154929
 ```
 
+
+#### RunWalkCalculator
+
+Calculate a mph and elapsed time for a projected distance and mix of run and walk durations and paces.
+
+run_hhmmss  = '9:15'
+run_ppm     = '9:00'
+walk_hhmmss = '0:45'
+walk_ppm    = '18:00'
+miles       = '26.2'
+result      = m26.RunWalkCalculator.calculate(run_hhmmss, run_ppm, walk_hhmmss, walk_ppm, miles)
+result object: 
+```
+{
+  "avg_mph": 6.201550387596899,
+  "avg_ppm": "9:40.5",
+  "proj_time": "04:13:29",
+  "proj_miles": 26.2
+}
+```
+
 ### Release History
 
-* 2015-08-04  v0.4.0  Project ported project back to CoffeeScript from Typescript.
+* 2015-08-04  v0.4.0  Added class RunWalkCalculator, and ported the project back to CoffeeScript.
 * 2015-05-13  v0.3.2  Repackaged again, from a single merged m26-js.ts file. Tests enhanced.
 * 2015-05-12  v0.3.1  Renamed lib from m26.js to m26-js.js, etc, and repackaged.
 * 2015-05-12  v0.3.0  Project ported from CoffeeScript to Typescript, with m26.d.ts typings file.
