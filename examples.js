@@ -261,19 +261,19 @@ Copyright 2015, Christopher Joakim <christopher.joakim@gmail.com>
 
   console.log('```');
 
-  d = new m26.Distance(26.2);
+  d = new m26.Distance(50.0, "k");
 
-  t = new m26.ElapsedTime("04:10:00");
+  d2 = new m26.Distance(26.2);
+
+  t = new m26.ElapsedTime("06:00:00");
 
   s = new m26.Speed(d, t);
 
-  d2 = new m26.Distance(50.0, "k");
+  console.log('d2 = new m26.Distance(26.2)');
 
-  console.log('d  = new m26.Distance(26.2)');
+  console.log('d  = new m26.Distance(50.0, "k")');
 
-  console.log('d2 = new m26.Distance(50.0, "k")');
-
-  console.log('t  = new m26.ElapsedTime("04:10:00")');
+  console.log('t  = new m26.ElapsedTime("06:00:00")');
 
   console.log('s  = new m26.Speed(d, t)');
 
@@ -331,29 +331,29 @@ Copyright 2015, Christopher Joakim <christopher.joakim@gmail.com>
 
   console.log('');
 
-  run_hhmmss = '9:15';
+  run_hhmmss = '2:45';
 
-  run_ppm = '9:00';
+  run_ppm = '9:15';
 
   walk_hhmmss = '0:45';
 
   walk_ppm = '18:00';
 
-  miles = '26.2';
+  miles = '31.0';
 
   result = m26.RunWalkCalculator.calculate(run_hhmmss, run_ppm, walk_hhmmss, walk_ppm, miles);
 
   console.log('```');
 
-  console.log("run_hhmmss  = '9:15'");
+  console.log("run_hhmmss  = " + run_hhmmss);
 
-  console.log("run_ppm     = '9:00'");
+  console.log("run_ppm     = " + run_ppm);
 
-  console.log("walk_hhmmss = '0:45'");
+  console.log("walk_hhmmss = " + walk_hhmmss);
 
-  console.log("walk_ppm    = '18:00'");
+  console.log("walk_ppm    = " + walk_ppm);
 
-  console.log("miles       = '26.2'");
+  console.log("miles       = " + miles);
 
   console.log("result      = m26.RunWalkCalculator.calculate(run_hhmmss, run_ppm, walk_hhmmss, walk_ppm, miles)");
 

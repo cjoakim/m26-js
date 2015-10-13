@@ -139,13 +139,13 @@ console.log('Calculate a Speed based on a given Distance and ElapsedTime.')
 console.log('')
 console.log('Methods mph(), kph(), yph(), seconds_per_mile(), pace_per_mile() and projected_time() are available.')
 console.log('```')
-d  = new m26.Distance(26.2)
-t  = new m26.ElapsedTime("04:10:00")
+d  = new m26.Distance(50.0, "k")
+d2 = new m26.Distance(26.2)
+t  = new m26.ElapsedTime("06:00:00")
 s  = new m26.Speed(d, t)
-d2 = new m26.Distance(50.0, "k")
-console.log('d  = new m26.Distance(26.2)')
-console.log('d2 = new m26.Distance(50.0, "k")')
-console.log('t  = new m26.ElapsedTime("04:10:00")')
+console.log('d2 = new m26.Distance(26.2)')
+console.log('d  = new m26.Distance(50.0, "k")')
+console.log('t  = new m26.ElapsedTime("06:00:00")')
 console.log('s  = new m26.Speed(d, t)')
 console.log('')
 console.log('s.mph()  -> ' + s.mph())
@@ -174,21 +174,29 @@ console.log('#### RunWalkCalculator')
 console.log('')
 console.log('Calculate a mph and elapsed time for a projected distance and mix of run and walk durations and paces.')
 console.log('')
-run_hhmmss  = '9:15'
-run_ppm     = '9:00'
+run_hhmmss  = '2:45'
+run_ppm     = '9:15'
 walk_hhmmss = '0:45'
 walk_ppm    = '18:00'
-miles       = '26.2'
+miles       = '31.0'
 result      = m26.RunWalkCalculator.calculate(run_hhmmss, run_ppm, walk_hhmmss, walk_ppm, miles)
 console.log('```')
-console.log("run_hhmmss  = '9:15'")
-console.log("run_ppm     = '9:00'")
-console.log("walk_hhmmss = '0:45'")
-console.log("walk_ppm    = '18:00'")
-console.log("miles       = '26.2'")
+console.log("run_hhmmss  = " + run_hhmmss)
+console.log("run_ppm     = " + run_ppm)
+console.log("walk_hhmmss = " + walk_hhmmss)
+console.log("walk_ppm    = " + walk_ppm)
+console.log("miles       = " + miles)
 console.log("result      = m26.RunWalkCalculator.calculate(run_hhmmss, run_ppm, walk_hhmmss, walk_ppm, miles)")
 console.log("result object: ")
 console.log(JSON.stringify(result, null, 2))
 console.log('```')
 console.log('')
 console.log('')
+
+# 2:45 : 0:45  => 3.33 ratio => 5:44:52 @ 11:07.5 pace
+# 3:00 : 1:00  => 3.00 ratio => 5:54:33 @ 11:26 pace
+# 2:45 : 1:00  => 2.75 ratio => 5:59:05 @ 11:35 pace
+# 2:00 : 1:00  => 2.00 ratio => 6:17:10 @ 12:10 pace
+
+# 6:00:00 => 11:36.77 pace_per_mile
+# 5:45:00 => 11:07.74
