@@ -1,0 +1,7 @@
+
+npm and publishing:
+-------------------
+$ npm pack   -> m26-js-0.1.5.tgz
+$ tar tvf m26-js-0.1.5.tgz
+
+$ npm publish
