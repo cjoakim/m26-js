@@ -27,7 +27,7 @@
         "age-graded"
     ],
     "author": "Chris Joakim",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
     },
     "devDependencies": {

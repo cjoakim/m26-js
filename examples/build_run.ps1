@@ -6,3 +6,4 @@
 npm run build
 
 node dist/main.js
+node dist/main.js > tmp/examples.md
