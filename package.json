@@ -8,12 +8,11 @@
     "engines": {
         "node": ">=18.7.0"
     },
-    "files": [
-        "dist"
-    ],
+    "files": ["dist", "LICENSE", "README.md", "package.json"],
     "scripts": {
         "build": "tsc",
         "prebuild": "rimraf dist/",
+        "prepublish": "rimraf dist/*test*",
         "test": "jest --verbose"
     },
     "keywords": [
