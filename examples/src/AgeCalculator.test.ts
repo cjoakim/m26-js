@@ -1,13 +1,6 @@
 import {
-  Age,
-  AgeCalculator,
-  Constants,
-  Distance,
-  ElapsedTime,
-  RunWalkCalculation,
-  RunWalkCalculator,
-  Speed,
-  TrainingZone
+    Age,
+    AgeCalculator
 } from "m26-js";
 
 // Override the (odd) behavior of the Jest 'toBeCloseTo' method.

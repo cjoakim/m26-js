@@ -8,7 +8,7 @@ import {
     RunWalkCalculator,
     Speed,
     TrainingZone
-  } from "m26-js";
+} from "m26-js";
   
 test("Age: maxPulse", () => {
     let a19 = new Age(19.1);

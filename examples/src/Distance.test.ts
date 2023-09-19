@@ -1,14 +1,7 @@
 import {
-    Age,
-    AgeCalculator,
     Constants,
-    Distance,
-    ElapsedTime,
-    RunWalkCalculation,
-    RunWalkCalculator,
-    Speed,
-    TrainingZone
-  } from "m26-js";
+    Distance
+} from "m26-js";
   
 test("Distance: constructor default uom", () => {
     let d = new Distance(26.2);

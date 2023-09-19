@@ -1,14 +1,6 @@
 import {
-    Age,
-    AgeCalculator,
-    Constants,
-    Distance,
-    ElapsedTime,
-    RunWalkCalculation,
-    RunWalkCalculator,
-    Speed,
-    TrainingZone
-  } from "m26-js";
+    Constants
+} from "m26-js";
   
 test("Constants: constant values", () => {
 

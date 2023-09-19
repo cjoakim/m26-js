@@ -1,14 +1,9 @@
 import {
     Age,
-    AgeCalculator,
-    Constants,
     Distance,
     ElapsedTime,
-    RunWalkCalculation,
-    RunWalkCalculator,
-    Speed,
-    TrainingZone
-  } from "m26-js";
+    Speed
+} from "m26-js";
 
 test("Speed: property formats ss second values as nn.nn strings", () => {
     let d1  = new Distance(1.0);

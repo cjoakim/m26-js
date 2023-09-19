@@ -1,14 +1,6 @@
 import {
-    Age,
-    AgeCalculator,
-    Constants,
-    Distance,
-    ElapsedTime,
-    RunWalkCalculation,
-    RunWalkCalculator,
-    Speed,
-    TrainingZone
-  } from "m26-js";
+    ElapsedTime
+} from "m26-js";
   
 test("ElapsedTime: constructor with a number of seconds", () => {
     let et = new ElapsedTime(' 3675 ');
