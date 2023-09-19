@@ -2,7 +2,11 @@
 npm and publishing:
 -------------------
 $ npm pack   -> m26-js-0.1.5.tgz
-$ tar tvf m26-js-0.1.5.tgz
+
+"dependencies": {   
+    "@project_A": "file:[path to project A]/project_A-0.0.0.tgz
+     ....
+}
 
 $ npm publish --dry-run
 

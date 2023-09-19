@@ -1,15 +1,27 @@
 
 import util from "util";
 
-import { Age } from "../../dist/Age"
-import { AgeCalculator } from "../../dist/AgeCalculator"
-import { Constants } from "../../dist/Constants"
-import { Distance } from "../../dist/Distance";
-import { ElapsedTime } from "../../dist/ElapsedTime";
-import { RunWalkCalculation } from "../../dist/RunWalkCalculation";
-import { RunWalkCalculator } from "../../dist/RunWalkCalculator";
-import { Speed } from "../../dist/Speed";
-import { TrainingZone } from "../../dist/TrainingZone";
+import {
+    Age,
+    AgeCalculator,
+    Constants,
+    Distance,
+    ElapsedTime,
+    RunWalkCalculation,
+    RunWalkCalculator,
+    Speed,
+    TrainingZone
+  } from "m26-js";
+
+// import { Age } from "../../dist/Age"
+// import { AgeCalculator } from "../../dist/AgeCalculator"
+// import { Constants } from "../../dist/Constants"
+// import { Distance } from "../../dist/Distance";
+// import { ElapsedTime } from "../../dist/ElapsedTime";
+// import { RunWalkCalculation } from "../../dist/RunWalkCalculation";
+// import { RunWalkCalculator } from "../../dist/RunWalkCalculator";
+// import { Speed } from "../../dist/Speed";
+// import { TrainingZone } from "../../dist/TrainingZone";
 
 // This module provides example use of the m26-js package,
 // and also generates documentation content for the README.md
