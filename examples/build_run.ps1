@@ -1,8 +1,8 @@
 
-# PowerShell script to compile and unit-test this app.
+# PowerShell script to compile and run this app.
 #
 # Chris Joakim, Microsoft, 2023
 
 npm run build
 
-npm run test
+node dist/main.js
