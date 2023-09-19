@@ -1,0 +1,26 @@
+{
+    "name":    "m26-js-examples",
+    "version": "1.0.0",
+    "description": "Example use of the m26-js package, with TypeScript.",
+    "homepage": "https://github.com/cjoakim/m26-js/examples",
+    "engines": {
+        "node": ">=18.7.0"
+    },
+    "scripts": {
+        "build": "tsc",
+        "prebuild": "rimraf dist/",
+        "test": "jest --verbose"
+    },
+    "author": "Chris Joakim",
+    "license": "ISC",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "typescript": "^5.2.2",
+        "@types/jest": "^29.5.4",
+        "@types/node": "^18.17.1",
+        "jest": "^29.7.0",
+        "rimraf": "5.0.1",
+        "ts-jest": "^29.1.1"
+    }
+}
