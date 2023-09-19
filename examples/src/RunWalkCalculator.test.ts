@@ -28,19 +28,6 @@ test("RunWalkCalculator: calculate with all walking, no running", () => {
     let result : RunWalkCalculation =
         calculator.calculate(run_hhmmss, run_ppm, walk_hhmmss, walk_ppm, miles);
 
-    //console.log(result);
-    // RunWalkCalculation {
-    //     runHhmmss: '00:00',
-    //     runPpm: '9:00',
-    //     walkHhmmss: '10:00',
-    //     walkPpm: '18:00',
-    //     miles: 3.333,
-    //     avgMph: 3.3333333333333335,
-    //     avgPpm: '18:00.00',
-    //     projectedTime: '00:59:59',
-    //     projectedMiles: 3.333
-    //  }
-
     // inputs
     expect(result.runHhmmss).toBe(run_hhmmss);
     expect(result.runPpm).toBe(run_ppm);
