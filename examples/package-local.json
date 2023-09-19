@@ -14,7 +14,7 @@
     "author": "Chris Joakim",
     "license": "MIT",
     "dependencies": {
-        "m26-js": "^1.0.0"
+        "m26-js": "file:../m26-js-1.0.0.tgz"
     },
     "devDependencies": {
         "typescript": "^5.2.2",
