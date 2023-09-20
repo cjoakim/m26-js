@@ -11,8 +11,7 @@
     "files": ["dist", "LICENSE", "README.md", "package.json"],
     "scripts": {
         "build": "tsc",
-        "prebuild": "rimraf dist/",
-        "prepublish": "rimraf dist/*test*",
+        "prebuild": "rimraf dist",
         "test": "jest --verbose"
     },
     "keywords": [
